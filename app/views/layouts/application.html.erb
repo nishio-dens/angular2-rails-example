@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular2 Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+<app>Loading...</app>
+
+<%= webpack_script_for("common") %>
+<%= webpack_script_for("vendor") %>
+<%= webpack_script_for("app") %>
+
+</body>
+</html>

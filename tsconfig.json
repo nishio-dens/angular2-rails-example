@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noEmitHelpers": false,
+    "sourceMap": true,
+    "noImplicitAny": true
+  },
+  "files": [
+    "frontend/src/bootstrap.ts",
+    "frontend/src/components.ts",
+    "frontend/src/pipes.ts",
+    "frontend/src/services.ts",
+    "frontend/src/validators.ts",
+    "frontend/src/vendor.ts",
+    "frontend/src/models/product.ts",
+    "frontend/src/services/product.service.ts",
+    "frontend/src/development.ts",
+    "frontend/src/app.ts",
+    "frontend/src/components/hello/hello.component.ts",
+    "frontend/src/components/products/products.component.ts"
+  ],
+  "filesGlob": [
+    "./frontend/src/**/*.ts",
+    "./frontend/test/**/*.ts",
+    "!./node_modules/**/*.ts"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": {
+    "rewriteTsconfig": true
+  },
+  "exclude": []
+}

@@ -1,0 +1,107 @@
+// bootswatch
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// page
+
+// --------
+// common
+// --------
+
+.no-margin-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.form-row {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mt-5 { margin-top: 5px; }
+.mt-10 { margin-top: 10px; }
+.mb-5 { margin-bottom: 5px; }
+.mb-10 { margin-bottom: 10px; }
+.full { width: 100%; }
+.mr-2 { margin-right: 2px; }
+.mr-5 { margin-right: 5px; }
+.mr-10 { margin-right: 10px; }
+.ml-10 { margin-left: 10px; }
+
+.main-container {
+  padding-top: 60px;
+}
+
+h2 {
+  font-size: 130%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px #dbdbdb solid;
+}
+
+// font
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  font-family: 'Open Sans','Helvetica Neue', Helvetica, 'Arial', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+  font-size: 13px;
+}
+p {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Arial', '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+  font-size: 13px;
+}
+
+// nabvar
+.navbar-header .navbar-brand {
+  font-size: 16px;
+  font-weight: bold;
+  color: #AAA;
+}
+
+.navbar .navbar-nav a{
+  font-size: 13px;
+  color: #AAA !important;
+}
+
+// table color
+.table thead tr {
+  background-color: #eaeaea;
+  padding: 0;
+  margin: 0;
+}
+
+.table thead th {
+  border-color: #eaeaea !important;
+}
+.form-table th {
+  background-color: #eaeaea !important;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #92C5EF;
+}
+
+.table .selected {
+  background-color: #96cb34 !important;
+}
+.table tr {
+  font-size: 12px;
+  border: 1px solid #ddd;
+}
+.table td {
+  font-size: 12px;
+}
+
+// header
+.control-header {
+  background-color: #eaeaea;
+  padding: 10px 0 10px 0;
+}
+
+// form
+.condensed-form {
+  margin-bottom: 0;
+}
+.form-errorbox .help-block {
+  color: #c7254e;
+}

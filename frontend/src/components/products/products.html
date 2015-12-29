@@ -1,0 +1,22 @@
+<h2>Products ({{totalCount}})</h2>
+
+<table class="table table-strip table-hover">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Created At</th>
+      <th>Updated At</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="#product of products">
+      <td>{{product.id}}</td>
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.createdAt}}</td>
+      <td>{{product.updatedAt}}</td>
+    </tr>
+  </tbody>
+</table>
