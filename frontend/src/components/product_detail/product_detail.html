@@ -1,0 +1,41 @@
+<div class="row mb-10">
+  <div class="col-xs-12">
+    <a href="/#/products">
+      << Go Back
+    </a>
+  </div>
+</div>
+
+<div class="container">
+  <h2> Product Detail </h2>
+  <form (ngSubmit)="onSubmit(f)" class="form-horizontal" #f="ngForm">
+    <div class="col-xs-12 text-right">
+      <span [hidden]="f.form.valid">
+        <label class="label label-danger mr-5">Invalid</label>
+      </span>
+      <button type="submit" class="btn btn-default" [disabled]="!f.form.valid">
+        Save Changes
+      </button>
+    </div>
+    <div class="form-group">
+      <label class="col-xs-2 control-label">Id</label>
+      <div class="col-xs-10">
+        <p class="form-control-static">{{product.id}}</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-xs-2 control-label">Name</label>
+      <div class="col-xs-10">
+        <input type="text" class="form-control" required
+        [(ngModel)]="product.name" ngControl="name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-xs-2 control-label">Price</label>
+      <div class="col-xs-10">
+        <input type="text" class="form-control" required
+        [(ngModel)]="product.price" ngControl="price">
+      </div>
+    </div>
+  </form>
+</div>

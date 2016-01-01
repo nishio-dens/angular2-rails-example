@@ -8,7 +8,7 @@ export class ProductService {
   constructor(private _http: Http) {
   }
 
-  fetch() {
+  fetchAll() {
     return this._http
       .get('/api/products')
       .map(r => r.json())
@@ -18,6 +18,15 @@ export class ProductService {
           results = r.results.map((v: any) => new Product(v));
         }
         return { totalCount: r.totalCount, results: results };
+      });
+  }
+
+  fetch(id: string) {
+    return this._http
+      .get('/api/products/' + id)
+      .map(r => r.json())
+      .map(r => {
+        return new Product(r);
       });
   }
 }

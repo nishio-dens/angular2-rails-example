@@ -80,6 +80,11 @@ module.exports = {
   tslint: {
     emitErrors: false,
     failOnHint: false
+  },
+
+  // for vagrant
+  watchOptions: {
+    poll: 1000
   }
 };
 
@@ -94,4 +99,3 @@ function rootNode(args) {
   args = Array.prototype.slice.call(arguments, 0);
   return root.apply(path, ['node_modules'].concat(args));
 }
-

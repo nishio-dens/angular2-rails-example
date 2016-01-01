@@ -4,7 +4,11 @@ import {ViewEncapsulation, Component} from 'angular2/core';
 import {CORE_DIRECTIVES} from 'angular2/common';
 import {ROUTER_DIRECTIVES, Router, RouteConfig, Location, Instruction} from 'angular2/router';
 
-import {HelloComponent, ProductsComponent} from './components';
+import {
+HelloComponent,
+ProductsComponent,
+ProductDetailComponent
+} from './components';
 import {ProductService} from './services';
 
 const templateUrl = require('./app.html');
@@ -21,8 +25,9 @@ const templateUrl = require('./app.html');
 })
 
 @RouteConfig([
-  {path: '/', name: 'Hello', component: HelloComponent},
-  {path: '/products', name: 'Products', component: ProductsComponent}
+  { path: '/', name: 'Hello', component: HelloComponent },
+  { path: '/products', name: 'Products', component: ProductsComponent },
+  { path: '/products/:id', name: 'ProductDetail', component: ProductDetailComponent }
 ])
 
 export class App {

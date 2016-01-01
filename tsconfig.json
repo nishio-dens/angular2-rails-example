@@ -10,24 +10,38 @@
     "noImplicitAny": true
   },
   "files": [
-    "frontend/src/bootstrap.ts",
-    "frontend/src/components.ts",
-    "frontend/src/pipes.ts",
-    "frontend/src/services.ts",
-    "frontend/src/validators.ts",
-    "frontend/src/vendor.ts",
-    "frontend/src/models/product.ts",
-    "frontend/src/services/product.service.ts",
-    "frontend/src/development.ts",
-    "frontend/src/app.ts",
-    "frontend/src/components/hello/hello.component.ts",
-    "frontend/src/components/products/products.component.ts"
+    "./frontend/src/app.ts",
+    "./frontend/src/bootstrap.ts",
+    "./frontend/src/components.ts",
+    "./frontend/src/components/hello/hello.component.ts",
+    "./frontend/src/components/product_detail/product_detail.component.ts",
+    "./frontend/src/components/products/products.component.ts",
+    "./frontend/src/development.ts",
+    "./frontend/src/models.ts",
+    "./frontend/src/models/product.ts",
+    "./frontend/src/pipes.ts",
+    "./frontend/src/services.ts",
+    "./frontend/src/services/product.service.ts",
+    "./frontend/src/validators.ts",
+    "./frontend/src/vendor.ts"
   ],
   "filesGlob": [
     "./frontend/src/**/*.ts",
     "./frontend/test/**/*.ts",
     "!./node_modules/**/*.ts"
   ],
+  "formatCodeOptions": {
+    "indentSize": 2,
+    "convertTabsToSpaces": true,
+    "insertSpaceAfterCommaDelimiter": true,
+    "insertSpaceAfterSemicolonInForStatements": true,
+    "insertSpaceBeforeAndAfterBinaryOperators": true,
+    "insertSpaceAfterKeywordsInControlFlowStatements": true,
+    "insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+    "placeOpenBraceOnNewLineForFunctions": false,
+    "placeOpenBraceOnNewLineForControlBlocks": false
+  },
   "compileOnSave": false,
   "buildOnSave": false,
   "atom": {

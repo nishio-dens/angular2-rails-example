@@ -22,7 +22,7 @@
     "test": "karma start",
     "ci": "npm run e2e && npm run test",
     "docs": "typedoc  --options typedoc.json  src/**/*.ts",
-    "clean-start": "rm -r public/wassets/* && npm run watch",
+    "clean-start": "rm -rf public/wassets/* && npm run watch",
     "start": "npm run clean-start",
     "postinstall": "typings install"
   },
@@ -70,4 +70,3 @@
     "webpack-dev-server": "^1.12.1"
   }
 }
-

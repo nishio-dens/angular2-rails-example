@@ -5,11 +5,11 @@ export class Product {
   createdAt: Date;
   updatedAt: Date;
 
-  constructor(info: any) {
-    this.id = info.id;
-    this.name = info.name;
-    this.price = info.price;
-    this.createdAt = info.created_at;
-    this.updatedAt = info.updated_at;
+  constructor(obj: any) {
+    this.id        = obj && obj.id         || null;
+    this.name      = obj && obj.name       || '';
+    this.price     = obj && obj.price      || 0;
+    this.createdAt = obj && obj.created_at || null;
+    this.updatedAt = obj && obj.updated_at || null;
   }
 }
