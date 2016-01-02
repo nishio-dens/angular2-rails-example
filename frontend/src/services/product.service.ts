@@ -29,4 +29,16 @@ export class ProductService {
         return new Product(r);
       });
   }
+
+  create(product: Product) {
+    let param: { product: Product } = { 'product': product };
+    return this._http
+      .post('/api/products/', JSON.stringify(param));
+  }
+
+  update(id: string, product: Product) {
+    let param: { product: Product } = { 'product': product };
+    return this._http
+      .put('/api/products/' + id, JSON.stringify(param));
+  }
 }

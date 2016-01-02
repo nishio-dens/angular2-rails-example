@@ -10,4 +10,5 @@
 #
 
 class Product < ActiveRecord::Base
+  PERMITTED_ATTRIBUTES = %i(name price)
 end

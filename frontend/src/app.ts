@@ -7,6 +7,7 @@ import {ROUTER_DIRECTIVES, Router, RouteConfig, Location, Instruction} from 'ang
 import {
 HelloComponent,
 ProductsComponent,
+ProductCreateComponent,
 ProductDetailComponent
 } from './components';
 import {ProductService} from './services';
@@ -27,6 +28,7 @@ const templateUrl = require('./app.html');
 @RouteConfig([
   { path: '/', name: 'Hello', component: HelloComponent },
   { path: '/products', name: 'Products', component: ProductsComponent },
+  { path: '/products/new', name: 'ProductCreate', component: ProductCreateComponent},
   { path: '/products/:id', name: 'ProductDetail', component: ProductDetailComponent }
 ])
 

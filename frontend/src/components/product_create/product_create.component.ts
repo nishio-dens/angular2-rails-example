@@ -11,7 +11,7 @@ import {ProductFormComponent} from '../../components';
 import {ProductService} from '../../services';
 import {Product} from '../../models';
 
-const templateUrl = require('./product_detail.html');
+const templateUrl = require('./product_create.html');
 
 @Component({
   moduleId: module.id,
@@ -26,8 +26,7 @@ const templateUrl = require('./product_detail.html');
   ]
 })
 
-export class ProductDetailComponent implements OnInit {
-  id: string;
+export class ProductCreateComponent {
   form: ControlGroup;
   product: Product = new Product({});
 
@@ -42,16 +41,9 @@ export class ProductDetailComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
-    this.id = this._routeParams.get('id');
-    this._productService
-      .fetch(this.id)
-      .subscribe(r => this.product = r);
-  }
-
   onSubmit(): void {
     this._productService
-      .update(this.id, this.product)
+      .create(this.product)
       .subscribe(_ => {
         this._router.navigate(['Products']);
       });
