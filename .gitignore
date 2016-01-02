@@ -38,6 +38,5 @@ public/images
 typings
 
 # Compiled
-app/assets/javascripts/frontend
 public/wassets/
 frontend/webpack-assets.json
